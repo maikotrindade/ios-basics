@@ -51,8 +51,14 @@ case 1 : print("two")
 default : print ("default :) ")
 }
 
-
-
+let tupleSwitch = ("YES", 123)
+    switch tupleSwitch{
+    case ("YES", 1234) : print("Tuple contains \(tupleSwitch.0) and \(tupleSwitch.1)")
+    case ("NO", _) : print("Tuple contains Yes and something else")
+    case (_, _) : print("Tuple contains 123 and something else")
+    //in this case 'default' is unnecessary
+    //default : break
+}
 
 
 
